@@ -7,5 +7,5 @@ Using the following Serilog sinks:
 ### Prerequisite:
 * Start 'Seq' as a docker container:
 <pre>
-docker run --rm -d -it -e ACCEPT_EULA=y -p 5341:80 datalust/seq
+docker run --name seq -d --rm -it -e ACCEPT_EULA=y -p 5341:80 datalust/seq
 </pre>
