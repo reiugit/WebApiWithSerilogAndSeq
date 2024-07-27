@@ -3,7 +3,7 @@ using Serilog.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddSerilog(x => x
+builder.Services.AddSerilog(config => config
     .Enrich.WithProperty("_EnrichedWithProperty", "PropertyValue")
     .Enrich.FromLogContext()
     .WriteTo.Console()
