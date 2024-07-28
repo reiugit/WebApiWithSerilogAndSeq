@@ -11,6 +11,6 @@ docker run --name seq -d --rm -it -e ACCEPT_EULA=y -p 5341:80 datalust/seq
 </pre>
 
 ### Enrichers
-    Enrich.WithProperty("Property", "PropertyValue")
+    Enrich.WithProperty(...)
     
     Enrich.FromLogContext()
